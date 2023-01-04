@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  p {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(74, 74, 196);
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+
+  }
+
+  input[type=text],
+  select {
+    width: 70%;
+    padding: 12px 20px;
+    margin-left: 100px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .required:after {
+    content: "*";
+    color: red;
+    /* content: '**'; */
+  }
+</style>
+
+<body>
+  <p>Clients Details <br>
+    <span style="font-size:20px;">The details of all incoming Clients</span>
+  </p>
+  <form action="">
+
+    <label class="required">Client Name:</label>
+    <input type="text" required style="margin-left:90px;">
+
+    <br><br>
+    <label class="required">Company:</label>
+    <input type="text" required style="margin-left:100px;">
+
+    <br><br>
+    <label class="Title">Title:</label>
+    <input type="text" style="margin-left: 150px;">
+
+
+    <br><br>
+    <label class="required">Department:</label>
+    <select name="Department" required style="margin-left:100px;">
+      <option value="" selected>-select-</option>
+      <option value="HR">HR</option>
+      <option value="IT">IT</option>
+      <option value="Fiance">Fiance</option>
+      <option value="Administration">Administration</option>
+    </select>
+    <br><br>
+
+    <label for="contact method">Preferred Contact method</label>
+    <input type="radio" name="contact method" value="email" style="margin-left: 50px;">Email
+    <input type="radio" name="contact method" value="phone">Phone
+    <br><br>
+
+    <label class="required">Company address</label>
+    <input type="text" name="Street Address" required id="Street Address" placeholder="Street Address"
+      style="margin-left:80px ;"><br><br>
+    <input type="text" name="Address Line 2" id="Address Line 2" placeholder="Address Line 2"
+      style="margin-left:100px ;"><br><br>
+    <input type="text" name="City" id="City" placeholder="City" style="margin-left:100px ;"><br><br>
+    <input type="text" name="State/Region/Province" id="State/Region/Province" placeholder="State/Region/Province"
+      style="margin-left:100px ;"><br><br>
+    <input type="text" name="Postal/Zip Code" id="Postal/Zip Code" placeholder="Postal/Zip Code"
+      style="margin-left:100px ;"><br><br>
+    <select name="country" id="country">
+      <option value="" selected>-select-</option>
+      <option value="pak">Pakistan</option>
+      <option value="ind">India</option>
+      <option value="aus">Australia</option>
+      <option value="fra">France</option>
+      <option value="usa">Usa</option>
+      <option value="ger">Germany</option>
+
+    </select>
+
+    <br><br>
+    <label class="required">Company Website</label>
+    <input type="text" required>
+
+    <br><br>
+    <label for="Company Logo">Comapny Logo</label>
+    <input type="image" src="" alt="" required>
+
+    <br><br>
+    <label class="required">Working Hours</label>
+    <input type="text" required>
+
+    <br><br>
+    <label class="required">Working Days</label>
+    <input type="number" required>
+
+
+    <br><br>
+    <label class="required">Billing Cycle</label>
+    <input type="date" required>
+
+    <br><br>
+    <label for="message">Additional Information</label>
+    <textarea name="" id="" cols="100" rows="5"></textarea>
+
+    <br><br>
+    <input type="submit">
+
+  </form>
+</body>
+
+</html>
